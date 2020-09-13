@@ -1,0 +1,49 @@
+/* Universal Styles */
+
+body {
+  background-color: lavenderblush;
+  text-align: left;
+  font-family: "Inconsolata", Courier, monospace;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  Margin: 30px;
+}
+
+h2 {
+  color: mediumslateblue;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+table{
+  justify-content: center;
+  border: 3px solid MediumPurple;
+  table-layout: initial;
+  width: 100%;
+}
+
+
+th {
+  background-color: MediumPurple;
+  color: white;
+}
+
+td {
+  border-top: 2px solid MediumPurple;
+}
+
+.section {
+  padding-top: 20px;
+  margin: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Personal Cheatsheet by Filipa Brito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- Title Section -->
+
+    <div id="title">
+      <h1>CSS Selectors and Specificity</h1>
+    </div>
+
+<!-- Selectors List -->
+
+    <div class="section" id="selectors">
+      <h2>Selectors List</h2>
+      <table>
+        <thead>
+          <th>Selector</th>
+          <th>Example</th>
+          <th>Description</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.class</td>
+            <td>.intro</td>
+            <td>Selects all elements with class="intro"</td>
+          </tr>
+          <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>Selects all elements</td>
+          </tr>
+          <tr>
+            <td>#id</td>
+            <td>#firstname</td>
+            <td>Selects the element with id="firstname"</td>
+          </tr>
+          <tr>
+            <td>element</td>
+            <td>p</td>
+            <td>Selects all &lt;p&gt; elements</td>
+          </tr>
+          <tr>
+            <td>attribute</td>
+            <td>[target]</td>
+            <td>Selects all elements with a target attribute</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+<!-- Specificity -->
+    <div class="section" id="specificity">
+      <h2>Specificity</h2>
+      <p>Specificity is the order by which the browser decides which CSS styles will be displayed.</p>
+      <p>A best practice in CSS is to style elements while using the lowest degree of specificity, so that if an element needs a new style, it is easy to override.</p>
+      <p>The following list of selector types increases by specificity:</p>
+      <table>
+        <thead>
+
+          <th>Type</th>
+          <th>Selectors</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Universal Selector</td>
+            <td>*</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Type Selectors</td>
+            <td>Elements (p)</td>
+          </tr>
+          <tr>
+            <td>Pseudo-elements (::before)</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Class Selectors</td>
+            <td>Classes (.class)</td>
+          </tr>
+          <tr>
+            <td>Attribute selectors ([target])</td>
+          </tr>
+          <tr>
+            <td>Pseudo-classes (:hover)</td>
+          </tr>
+          <tr>
+            <td>ID Selectors</td>
+            <td>(#id)</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Exceptions</td>
+            <td>!important</td>
+          </tr>
+          <tr>
+            <td>:is and :not</td>
+          </tr>
+          <tr>
+            <td>:where</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+</html>
